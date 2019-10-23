@@ -1,19 +1,29 @@
-<!doctype html>
 
-<html lang="en">
-<head>
-  <meta charset="utf-8">
+<!DOCTYPE html> <meta charset="utf-8">
 
-  <title>The HTML5 Herald</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
 
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
+<script>
+function refreshPage(){
+    window.location.reload();
+} 
+</script>
 
-</head>
+<style>
+    #field {width:20%; margin: auto; vertical-align: center;border-radius: 10px;}
+    .center-block {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+</style>
 
-<body>
-    <p>Oky lets see where this goes!</p>
-    <script src="js/scripts.js"></script>
-</body>
-</html>
+
+
+<fieldset id="field"><legend><b>Please Log In</b></legend>
+<form action="testcaptcha-and-creds.php" method="GET">
+<b>UCID: </b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="center-block" type = text name = "ucid" required id="ucid" ><br><br>
+<b>Password: </b><input class="center-block" type = text name = "pass" required id="pass" ><br><br>
+<br>
+</form>
+</fieldset>
+
